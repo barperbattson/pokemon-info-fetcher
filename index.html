@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pokemon Info Fetcher</title>
+
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div id="content-box">
+            <p>Type in a Pokemon's name or Pokedex number and then press "Get Info" to see details!</p>
+            <div id="search">
+                <input id="search-box" type="text"> 
+                <button id="search-button" onclick="getPokemon(document.getElementById('search-box').value);">Get Info</button>
+            </div>
+            <h1 id="poke-name">Bulbasaur</h1>
+            <div id="poke-info">
+                <img id="poke-img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png">
+                <div id="poke-stats">
+                    <span id="height">Height: 5m</span>
+                    <br>
+                    <br>
+                    <span id="weight">Wright: 5g</span>
+                    <br>
+                    <br>
+                    <span id="base-xp">Base Experience: 60</span>
+                    <br>
+                    <br>
+                    <div id="typesDiv"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
